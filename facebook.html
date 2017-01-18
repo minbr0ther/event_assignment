@@ -7,14 +7,19 @@
 </head>
 <body style="background-color:#eaebef">
    <div id="head"> <!--  상단  -->
-     <input type="text" id="headTA" style="text-align:center; color:#5b73a1;" name="search" placeholder="Search Facebook"  onkeyup="letterCount()">
+     <input type="text" id="headTA" style="text-align:center; color:#5b73a1;" name="search" placeholder="Search Facebook"> 
+     <!-- onkeyup="letterCount()" -->
      <div id="warningText"></div>
   </div>
-  
+
   <div id="myTimeline"> <!--  내 타임라인 글쓰기  -->
       <img id="myImage" style="width:30px" src="http://cfile7.uf.tistory.com/image/21474A3F56B6318908EDA7" alt="">
       <textarea id="myTA" name="myTimeline" cols="20" rows="2">Whats on your mind?</textarea>
-      <button id="myTAnlc">메뉴</button>
+      <div id="myTAnlc">
+        <button>N</button>
+        <button>L</button>
+        <button>C</button>
+      </div>
   </div>
   
   <div style="background-color:white; border: 1px solid white; width:400px; margin:10px 0px;">
