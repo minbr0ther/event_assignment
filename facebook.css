@@ -35,8 +35,8 @@ nav{
    background-color:white;
 }
 
-#myImage{
-  margin:13px 0px 13px 13px;
+#myImage, #otherImage {
+  margin:8px 0px 0px 8px;
   float:left;
 }
 
@@ -50,3 +50,14 @@ nav{
   width:80px; height:26px;
   margin:19px 0px 0px 300px
 }
+
+#otherNameDateCreated {
+  margin:13px 0px 0px 8px;
+  float:left;
+}
+
+#DateCreated {
+  font-size:0.7rem;
+  color:gray;
+}
+

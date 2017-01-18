@@ -6,12 +6,15 @@ var getMyTAnlc = document.getElementById("myTAnlc");
 getMyTA.addEventListener("click", function(){
     getMyTAnlc.innerText = "";
     getMyTAnlc.insertAdjacentHTML('afterbegin','<button>취소</button>');
-    
-    getMyTAnlc.addEventListener("click", function(){
+});
+
+getMyTAnlc.addEventListener("click", function(){
         getMyTAnlc.innerText = "";
         getMyTAnlc.insertAdjacentHTML('afterbegin','<button>N</button> <button>L</button> <button>C</button>');
-    });
 });
+
+
+
 
 
 
@@ -19,12 +22,17 @@ getMyTA.addEventListener("click", function(){
 
 var getHeadTA = document.getElementById("headTA"); //검색창영역을 변수 'getText'로 가져온다
 var getWarningText = document.getElementById("warningText");
+var maxLength = 20;
+
+var EROR_MSG = {
+    msg : "글자 이상입니다!!"
+};
 
 getHeadTA.addEventListener("keyup", function(evt) {
     var bin = evt.target;
     var string = bin.value; //검색창영역에 입력된 값을 변수 'string'에 넣는다
-    if(string.length >= 20)
-    	getWarningText.innerText = "20글자 이상입니다!!";
+    if(string.length >= maxLength)
+    	getWarningText.innerText = maxLength + EROR_MSG.msg;
     else
     	getWarningText.innerText = "";
 });
